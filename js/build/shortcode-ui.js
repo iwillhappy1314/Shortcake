@@ -598,6 +598,7 @@ var shortcodeViewConstructor = {
 
 		var shortcode_tags = _.map( sui.shortcodes.pluck( 'shortcode_tag' ), this.pregQuote ).join( '|' );
 		var regexp = wp.shortcode.regexp( shortcode_tags );
+		regexp.lastIndex = 0;
 		var matches = regexp.exec( shortcodeString );
 
 		if ( ! matches ) {
@@ -920,7 +921,7 @@ var editAttributeFieldAttachment = sui.views.editAttributeField.extend( {
 		this.frame.open();
 		if ( this.model.get( 'value' ) ) {
 			var selection = this.frame.state().get('selection');
-			attachment = wp.media.attachment( this.model.get( 'value' ) );
+			var attachment = wp.media.attachment( this.model.get( 'value' ) );
 			attachment.fetch();
 			selection.reset( attachment ? [ attachment ] : [] );
 			this.frame.state().set('selection', selection);
@@ -938,7 +939,7 @@ var editAttributeFieldAttachment = sui.views.editAttributeField.extend( {
 	 *
 	 */
 	_selectAttachment: function(e) {
-		var selection  = this.frame.state().get('selection');
+		var selection  = this.frame.state().get('selection'),
 			attachment = selection.first();
 		if ( attachment.id != this.model.get( 'value' ) ){
 			this.model.set( 'value', null );
@@ -1254,9 +1255,11 @@ var editAttributeField = Backbone.View.extend( {
 	tagName: "div",
 
 	events: {
-		'input  input':    'inputChanged',
-		'input  textarea': 'inputChanged',
-		'change select':   'inputChanged',
+		'input  input':                  'inputChanged',
+		'input  textarea':               'inputChanged',
+		'change select':                 'inputChanged',
+		'change input[type="radio"]':    'inputChanged',
+		'change input[type="checkbox"]': 'inputChanged'
 	},
 
 	render: function() {
