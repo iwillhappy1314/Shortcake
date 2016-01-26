@@ -3,95 +3,189 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Shortcode UI v0.3-alpha\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/"
-"shortcode-ui\n"
-"POT-Creation-Date: 2015-04-22 16:48:40+00:00\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/shortcode-ui\n"
+"POT-Creation-Date: 2015-11-08 09:23+0800\n"
+"PO-Revision-Date: 2015-11-08 09:31+0800\n"
+"Last-Translator: Amos Lee <iwillhappy1314@gmail.com>\n"
+"Language-Team: Amos Lee <iwillhappy1314@gmail.com>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-04-28 09:58+0800\n"
-"X-Generator: Poedit 1.7.5\n"
-"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;"
-"_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;"
-"esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c\n"
-"Language: zh_CN\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: ../\n"
+"X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
-"Last-Translator: Amos Lee <iwillhappy1314@gmail.com>\n"
-"Language-Team: Amos Lee <iwillhappy1314@gmail.com>\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/class-shortcode-ui.php:40
+#: dev.php:68
+msgid ""
+"Shortcode UI plugin must be active for Shortcode UI Example plugin to "
+"function."
+msgstr "Shortcode UI 必须启用，Shortcode UI 示例插件才能正常使用。"
+
+#: dev.php:119
+msgid "Shortcake With No Attributes"
+msgstr "没有属性的Shortcake"
+
+#: dev.php:159
+msgid "Attachment"
+msgstr "附件"
+
+#: dev.php:169 dev.php:170
+msgid "Select Image"
+msgstr "选择图像"
+
+#: dev.php:173
+msgid "Citation Source"
+msgstr "引用来源"
+
+#: dev.php:178
+msgid "Test placeholder"
+msgstr "测试占位符"
+
+#: dev.php:183
+msgid "Select Page"
+msgstr "选择页面"
+
+#: dev.php:190
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: dev.php:195
+msgid "Hex color code"
+msgstr "16进制颜色值"
+
+#: dev.php:199
+msgid "Alignment"
+msgstr "对齐"
+
+#: dev.php:200
+msgid ""
+"Whether the quotation should be displayed as pull-left, pull-right, or "
+"neither."
+msgstr "引言显示的位置。"
+
+#: dev.php:204
+msgid "None"
+msgstr "无"
+
+#: dev.php:205
+msgid "Pull Left"
+msgstr "靠左"
+
+#: dev.php:206
+msgid "Pull Right"
+msgstr "靠右"
+
+#: dev.php:210
+msgid "Year"
+msgstr "年份"
+
+#: dev.php:211
+msgid "Optional. The year the quotation is from."
+msgstr "可选，引言产生的年份。"
+
+#: dev.php:230
+msgid "Shortcake Dev"
+msgstr "Shortcake Dev"
+
+#: dev.php:249
+msgid "Quote"
+msgstr "引言"
+
+#: dev.php:250
+msgid "Include a statement from someone famous."
+msgstr "引用名人名言。"
+
+#: dev.php:288
+msgid "Content:"
+msgstr "内容："
+
+#: dev.php:289
+msgid "Source:"
+msgstr "来源："
+
+#: dev.php:290
+msgid "Image:"
+msgstr "图像："
+
+#: inc/class-shortcode-ui.php:109
 msgid "Inner Content"
 msgstr "插入内容"
 
-#: inc/class-shortcode-ui.php:101 inc/class-shortcode-ui.php:102
+#: inc/class-shortcode-ui.php:223 inc/class-shortcode-ui.php:224
 msgid "Insert Post Element"
 msgstr "插入文章内容"
 
-#: inc/class-shortcode-ui.php:103
+#: inc/class-shortcode-ui.php:225
+#, php-format
 msgid "%s Details"
 msgstr "%s 详情"
 
-#: inc/class-shortcode-ui.php:104
+#: inc/class-shortcode-ui.php:226
 msgid "Insert Element"
 msgstr "插入元素"
 
-#: inc/class-shortcode-ui.php:105
+#: inc/class-shortcode-ui.php:227
 msgid "Update"
 msgstr "更新"
 
-#: inc/class-shortcode-ui.php:106
+#: inc/class-shortcode-ui.php:228
 msgid "There are no attributes to configure for this Post Element."
 msgstr "此文章元素没有属性需要设置"
 
-#: inc/class-shortcode-ui.php:107
-msgid "Edit"
-msgstr "编辑"
-
-#: inc/class-shortcode-ui.php:108
-msgid "Preview"
-msgstr "预览"
-
-#: inc/class-shortcode-ui.php:109
+#: inc/class-shortcode-ui.php:229
 msgid "Failed to load preview"
 msgstr "加载预览失败"
 
-#: inc/class-shortcode-ui.php:110
+#: inc/class-shortcode-ui.php:230
 msgid "Search"
 msgstr "搜索"
 
-#: inc/class-shortcode-ui.php:111
+#: inc/class-shortcode-ui.php:231
 msgid "Insert Content"
 msgstr "插入内容"
 
-#: inc/class-shortcode-ui.php:205
+#: inc/class-shortcode-ui.php:326
 msgid "Something's rotten in the state of Denmark"
 msgstr "Something's rotten in the state of Denmark"
 
-#: inc/fields/class-field-attachment.php:47
-#: inc/fields/class-field-attachment.php:48
+#: inc/fields/class-field-attachment.php:79
+#: inc/fields/class-field-attachment.php:80
 msgid "Select Attachment"
 msgstr "选择附件"
+
+#: inc/fields/class-field-attachment.php:104
+msgid "Thumbnail Details"
+msgstr "缩略图详情"
+
+#: inc/fields/class-field-attachment.php:109
+msgid "Edit Attachment"
+msgstr "编辑附件"
 
 #: inc/templates/edit-form.tpl.php:3
 msgid "Back to list"
 msgstr "返回列表"
 
-#. Plugin Name of the plugin/theme
-msgid "Shortcode UI"
-msgstr "简码UI"
+#~ msgid "Edit"
+#~ msgstr "编辑"
 
-#. Description of the plugin/theme
-msgid "User Interface for adding shortcodes."
-msgstr "添加简码的用户界面"
+#~ msgid "Preview"
+#~ msgstr "预览"
 
-#. Author of the plugin/theme
-msgid "Fusion Engineering and community"
-msgstr "Fusion Engineering and community"
+#~ msgid "Shortcode UI"
+#~ msgstr "简码UI"
 
-#. Author URI of the plugin/theme
-msgid "http://next.fusion.net/tag/shortcode-ui/"
-msgstr "http://next.fusion.net/tag/shortcode-ui/"
+#~ msgid "User Interface for adding shortcodes."
+#~ msgstr "添加简码的用户界面"
+
+#~ msgid "Fusion Engineering and community"
+#~ msgstr "Fusion Engineering and community"
+
+#~ msgid "http://next.fusion.net/tag/shortcode-ui/"
+#~ msgstr "http://next.fusion.net/tag/shortcode-ui/"
